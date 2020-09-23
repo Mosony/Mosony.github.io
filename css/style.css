@@ -22,9 +22,11 @@ header
     z-index: 1000;
     display: flex;
     align-items: center;
-
+    
     animation: fadeInLeft; 
     animation-duration: 1s; 
+    /*scroll animation navbar background */
+    transition: 0.5s;
 }
 .logo
 {
@@ -76,6 +78,15 @@ header ul li a
 header ul li a:hover 
 {
     color: #FC414A;
+}
+
+/* Navigation bar bg on scroll */
+
+header.sticky 
+{
+    background-image: linear-gradient(to right, #002C3D , #0059BF);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 /* Main section (banner) */
@@ -161,10 +172,27 @@ header ul li a:hover
 
 
 /* Main section character */
+
 .character-main
 {
     width: 650px;
 
     animation: fadeInRight; 
     animation-duration: 1s;
+}
+
+/* Portfolio section */
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h1
+{
+    font-size: 40px;
+    font-weight: 700;
 }

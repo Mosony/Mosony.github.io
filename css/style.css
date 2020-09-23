@@ -83,6 +83,12 @@ header
     margin-right: 40px;
     width: 60px;
     fill: #FFFF;
+
+}
+
+.logok img
+{
+    width: 60px;
 }
 .logok a:hover
 {

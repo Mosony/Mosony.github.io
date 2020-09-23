@@ -9,6 +9,77 @@
 section{
     padding: 100px;
 }
+
+/* Navigation bar (header) */
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+    animation: fadeInLeft; 
+    animation-duration: 1s; 
+}
+.logo
+{
+    width: 50px;
+}
+
+.logo-first
+{
+    color: #FC414A;
+    font-weight: 500;
+    line-height: 1.7em;
+    font-size: 1.5em;
+    position: relative;
+    margin-right: 7px;
+    margin-left: 10px;
+}
+
+.logo-last
+{
+    position: relative;
+    color: #FFFF;
+    font-weight: 500;
+    line-height: 1.7em;
+    font-size: 1.5em;
+}
+
+header ul 
+{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+}
+
+header ul li 
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a 
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 45px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header ul li a:hover 
+{
+    color: #FC414A;
+}
+
+/* Main section (banner) */
+
 .banner
 {
     position: relative;
@@ -17,6 +88,11 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.textBx
+{
+    animation: fadeInLeft; 
+    animation-duration: 1s;
 }
 
 .banner h2
@@ -41,6 +117,9 @@ section{
     font-weight: 500;
     line-height: 1.5em;
 }
+
+/* Main section button (Download CV) */
+
 .btn
 {
     position: relative;
@@ -53,23 +132,11 @@ section{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 100;
-    
 }
 
+/* Main section icons */
 
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logok
+.icons
 {
     position: relative;
     display: flex;
@@ -78,62 +145,26 @@ header
     align-items: center;
 }
 
-.logok a
+.icons a
 {
     margin-right: 40px;
     width: 60px;
     fill: #FFFF;
-
-}
-
-.logok img
-{
     width: 60px;
 }
-.logok a:hover
+
+.icons a:hover
 {
-    
-    fill: #FC414A;
-    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
-
-}
-
-header .logo svg
-{
-    width: 200px;
-}
-
-header ul 
-{
-    position: relative;
-    display: flex;
-}
-
-header ul li 
-{
-    position: relative;
-    list-style: none;
-
-}
-
-header ul li a 
-{
-    position: relative;
-    display: inline-block;
-    margin: 0 45px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-header ul li a:hover 
-{
-    color: #FC414A;
+    animation: rubberBand; 
+    animation-duration: 1s; 
 }
 
 
-
-.imagech img
+/* Main section character */
+.character-main
 {
     width: 650px;
+
+    animation: fadeInRight; 
+    animation-duration: 1s;
 }

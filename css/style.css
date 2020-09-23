@@ -69,6 +69,29 @@ header
     justify-content: space-between;
     align-items: center;
 }
+.logok
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.logok a
+{
+    margin-right: 40px;
+    width: 60px;
+    fill: #FFFF;
+}
+.logok a:hover
+{
+    
+    fill: #FC414A;
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+
+}
 
 header .logo svg
 {
@@ -95,6 +118,11 @@ header ul li a
     margin: 0 45px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+header ul li a:hover 
+{
+    color: #FC414A;
 }
 
 

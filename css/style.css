@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 section{
     padding: 100px;
@@ -73,6 +74,8 @@ header ul li a
     margin: 0 45px;
     color: #FFFFFF;
     text-decoration: none;
+
+    transition: 0.3s;
 }
 
 header ul li a:hover 
@@ -85,7 +88,7 @@ header ul li a:hover
 header.sticky 
 {
     background-image: linear-gradient(to right, #002C3D , #0059BF);
-    padding: 20px 100px;
+    padding: 10px 80px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
@@ -159,7 +162,6 @@ header.sticky
 .icons a
 {
     margin-right: 40px;
-    width: 60px;
     fill: #FFFF;
     width: 60px;
 }
@@ -183,16 +185,62 @@ header.sticky
 
 /* Portfolio section */
 
+.portfolio
+{
+    background: #FFFF;
+    min-height: 100vh;
+}
 .heading
 {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #111;
+    color: #222;
 }
 
 .heading h1
 {
     font-size: 40px;
     font-weight: 700;
+}
+
+.portfolio .content 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolio .content .contentBx
+{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.portfolio .content .contentBx img 
+{
+    height: 60px;
+    margin: 20px;
+}
+
+.portfolio .content .contentBx:hover
+{
+    background: rgb(0,64,119);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+}
+
+/* Footer */
+
+.footer 
+{
+    background: #222;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
 }

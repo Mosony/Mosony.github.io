@@ -6,70 +6,128 @@
     <title>Mosony Ákos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- animation on scroll-->
+    <link rel="icon" href="svg/favicon.svg">
 </head>
 <body>
     <header>
-        <img class="logo" src="img/logo.svg" alt="">
-        <span class="logo-first">Mosony</span> <span class="logo-last">Ákos</span>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
-            <li><a href="#" onclick="toggleMenu();">Portfolio</a></li>
-            <li><a href="#" onclick="toggleMenu();">Contant</a></li>
-        </ul>
+            <img class="logo" src="svg/logo.svg" alt="" >
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contant</a></li>
+            </ul>
     </header>
 
-    <section class="banner" id="home">
-        <div class="textBx">
+    <section class="home" id="home">
+        <div class="textBox">
             <h2> Hi, my <br> name is <span> Ákos. </span> </h2>
-            <h3> I'm <strong> graphic designer</strong> and <strong>web developer.</strong> </h3>
-            <a href="#" class="btn">Download CV</a>
+            <h3> I'm <span> graphic designer</span> and <span>web developer.</span> </h3>
+            <h4>You can download my resume from here:</h4>
+            <a href="pdf/Mosony_Akos_CV.pdf" class="button" download>Download CV</a>
             <div class="icons">
-                <a href="https://github.com/Mosony"><img src="img/github-icon.svg" alt=""></a>
-                <a href="#"><img src="img/linkedin-icon.svg" alt=""></a>
-                <a href="#"><img src="img/facebook-icon.svg" alt=""></a>
+                <a href="https://github.com/Mosony" target="_blank"><img src="svg/github-icon.svg" alt=""></a>
+                <a href="#"><img src="svg/linkedin-icon.svg" alt=""></a>
+                <a href="#"><img src="svg/behance-icon.svg" alt=""></a>
             </div>
         </div>
         <div class="character-main">
-            <img src="img/character-home.svg" alt="">
+            <img src="svg/character-main.svg" alt="">
         </div>
     </section>
 
-    <section class="portfolio" id="skills">
+    <section class="skills" id="skills">
         <div class="heading">
             <h1>Skills</h1>
         </div>
-        <div class="content">
-            <div class="contentBx">
-                <img src="img/vector-design.svg">
+        <div class="content" >
+            <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
+                <img src="svg/grapich-design-icon.svg">
                 <h2>Grapich design</h2>
-                <p>Adobe photoshop, Adobe illustrator</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
             </div>
-
-            <div class="contentBx">
-                <img src="img/web-development.svg">
+            <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
+                <img src="svg/web-development-icon.svg">
                 <h2>Web development</h2>
-                <p>Html, css, javascript</p>
+                <p>Html</p>
+                <p>CSS</p>
+                <p>Javascript</p>
             </div>
-
-            <div class="contentBx">
-                <img src="img/code-design.svg">
+            <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
+                <img src="svg/developer-icon.svg">
                 <h2>Development</h2>
-                <p>.net core, c#</p>
+                <p>Git</p>
+                <p>C#</p>
+                <p>.Net</p>
             </div>
         </div>
     </section>
 
-    <section class="banner">
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h1>Portfolio</h1>
+        </div>  
+        <div class="content">
+            <div class="character-portfolio" data-aos="zoom-in" data-aos-duration="800">
+                <img src="svg/character-portfolio.svg" alt="">
+            </div>
+            <div class="buttons" data-aos="fade-left"  data-aos-duration="800">
+                <a href="https://drive.google.com/drive/folders/1jlDBAX2NCpXKGEyJy8LNoJ-RVKHe2ks3?usp=sharing" class="button" target="_blank">Flyers</a>
+                <a href="https://drive.google.com/drive/folders/11PEAVzLgoqcnKkftbv-D77aiG_yoWFUA?usp=sharing" class="button" target="_blank">Web designs</a>
+                <a href="https://drive.google.com/drive/folders/1fgca1wzot18EBJfPxEj0WmiBf8HC7yn3?usp=sharing" class="button" target="_blank">Web applications</a>
+                <a href="https://drive.google.com/drive/folders/1ifUxkZYYOngWACJBLj_VA_te4qNu35LV?usp=sharing" class="button" target="_blank">Wedding elements</a>
+                <a href="pdf/License_Plate_Recognition.pdf" class="button" download>License plate recognition</a>
+            </div>
+        </div>
 
+        <!--  Background element (svg) -->
+        <div class="custom-shape-divider-bottom-1601504167">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
+            <p>(The form does not work!)</p>
+        </div> 
+        <div class="content">
+            <div class="formBox"  data-aos="zoom-in-up" data-aos-duration="800">
+                <form>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="character-contact" data-aos="zoom-in-left" data-aos-duration="800">
+                <img src="svg/character-contact.svg" alt="">
+            </div>
+        </div>
 
-    <div class="footer">
-       <p>Copyright© Mosony Ákos 2020</p>
+        <!--  Background element (svg) -->
+        <div class="custom-shape-divider-top-1601504221">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <div class="footer" >
+       <p>Mosony Ákos 2020</p>
     </div>
 
     <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll-->
+    <script> AOS.init({once: true});</script> <!-- animation on scroll-->
+
+    <!-- Animation on scroll: https://michalsnik.github.io/aos/   -->
+    <!-- css animation: https://animate.style/   -->
+
 </body>
 </html>

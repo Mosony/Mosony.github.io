@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
 
-    animation: fadeInLeft; 
+    animation: fadeIn; 
     animation-duration: 1s; 
     /*scroll animation navbar background */
     transition: 0.5s;
@@ -82,7 +82,7 @@ header.sticky
     align-items: center;
 }
 .home .textBox{
-    animation: fadeInLeft; 
+    animation: fadeIn;
     animation-duration: 1s;
 }
 
@@ -156,7 +156,7 @@ header.sticky
 .home .character-main{
     width: 650px;
 
-    animation: fadeInRight; 
+    animation: bounceIn; 
     animation-duration: 1s;
 }
 
@@ -190,7 +190,7 @@ header.sticky
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     width: 340px;
-    height: 430px;
+    height: 460px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
@@ -467,6 +467,11 @@ header.sticky
         z-index: 1000;
         display: flex;
         justify-content: space-between;
+
+        animation: None; 
+        /* animation-duration: 1s;  */
+        /* scroll animation navbar background */
+        /* transition: 0.5s; */
     }
     .menu{
         position: fixed;

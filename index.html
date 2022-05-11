@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mosony Ákos</title>
+
+    <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- animation -->
     <link rel="stylesheet" href="css/animate.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- animation on scroll-->
+
+    <!-- animation on scroll -->
+    <link href="css/aos.css" rel="stylesheet">
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="css/spotlight.min.css">
+
+    <!-- icon -->
     <link rel="icon" href="svg/favicon.svg">
+
 </head>
 <body>
     <header>
@@ -24,18 +36,20 @@
     <section class="home" id="home">
         <div class="textBox">
             <h2> Hi, my <br> name is <span> Ákos. </span> </h2>
-            <h3> I'm a<span> graphic designer</span> and <span>web developer.</span> </h3>
+            <h3> I'm a<span> graphic designer</span> and <span>software developer.</span> </h3>
             <h4>You can download my resume from here:</h4>
-            <a href="pdf/Mosony_Akos_CV.pdf" class="button" download>Download CV</a>
+            <a href="pdf/Mosony_Akos_CV_2022.pdf" class="button" download>Download CV</a>
             <div class="icons">
                 <a href="https://github.com/Mosony" target="_blank"><img src="svg/github-icon.svg" alt=""></a>
-                <a href="#"><img src="svg/linkedin-icon.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/mosony-%C3%A1kos-94b651239/"><img src="svg/linkedin-icon.svg" alt=""></a>
                 <a href="#"><img src="svg/behance-icon.svg" alt=""></a>
+
             </div>
         </div>
         <div class="character-main">
             <img src="svg/character-main.svg" alt="">
         </div>
+
     </section>
 
     <section class="skills" id="skills">
@@ -51,17 +65,21 @@
             </div>
             <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
                 <img src="svg/web-development-icon.svg">
-                <h2>Web development</h2>
+                <h2>Web development <br> (Full Stack)</h2>
+                <p>Flask</p>
+                <p>PostgreSQL, SQLite</p>
                 <p>Html</p>
                 <p>CSS</p>
                 <p>Javascript</p>
             </div>
             <div class="contentBox" data-aos="flip-left" data-aos-duration="1000">
                 <img src="svg/developer-icon.svg">
-                <h2>Development</h2>
+                <h2>Development / <br> DevOps</h2>
+                <p>Python</p>
+                <p>Docker</p>
                 <p>Git</p>
-                <p>C#</p>
-                <p>.Net</p>
+                <p>Nginx</p>
+                <p>Linux</p>
             </div>
         </div>
     </section>
@@ -74,12 +92,35 @@
             <div class="character-portfolio" data-aos="zoom-in" data-aos-duration="800">
                 <img src="svg/character-portfolio.svg" alt="">
             </div>
+
             <div class="buttons" data-aos="fade-left"  data-aos-duration="800">
-                <a href="https://drive.google.com/drive/folders/1jlDBAX2NCpXKGEyJy8LNoJ-RVKHe2ks3?usp=sharing" class="button" target="_blank">Flyers</a>
-                <a href="https://drive.google.com/drive/folders/11PEAVzLgoqcnKkftbv-D77aiG_yoWFUA?usp=sharing" class="button" target="_blank">Web designs</a>
-                <a href="https://drive.google.com/drive/folders/1fgca1wzot18EBJfPxEj0WmiBf8HC7yn3?usp=sharing" class="button" target="_blank">Web applications</a>
-                <a href="https://drive.google.com/drive/folders/1ifUxkZYYOngWACJBLj_VA_te4qNu35LV?usp=sharing" class="button" target="_blank">Wedding elements</a>
-                <a href="pdf/578-Cikk PDF-2525-2-10-20201007.pdf" class="button" download>License plate recognition</a>
+                <div class="spotlight-group">
+                    <a class="button spotlight" href="img/flyer-01.png" data-gallery="gallery_flyer">Flyers</a>
+                    <a class="spotlight" data-src="img/flyer-02.png" data-gallery="gallery_flyer"></a>
+                    <a class="spotlight" data-src="img/flyer-03.png" data-gallery="gallery_flyer"></a>
+                    <a class="spotlight" data-src="img/flyer-04.png" data-gallery="gallery_flyer"></a>
+                    <a class="spotlight" data-src="img/flyer-05.png" data-gallery="gallery_flyer"></a>
+                </div>
+
+                <div class="spotlight-group">
+                    <a class="button spotlight" href="img/web-design-01.png" data-gallery="gallery_web_design">Web designs</a>
+                    <a class="spotlight" data-src="img/web-design-02.png" data-gallery="gallery_web_design"></a>
+                </div>
+
+                <div class="spotlight-group">
+                    <a class="button spotlight" href="video/beadando_video.mp4" data-media="video" data-gallery="gallery_web_application" >Web application</a>
+                </div>
+                
+                <div class="spotlight-group">
+                    <a class="button spotlight" href="img/wedding-element-01.jpg" data-gallery="gallery_wedding_elements">Wedding elements</a>
+                    <a class="spotlight" data-src="img/wedding-element-02.png" data-gallery="gallery_wedding_elements"></a>
+                    <a class="spotlight" data-src="img/wedding-element-03.png" data-gallery="gallery_wedding_elements"></a>
+                    <a class="spotlight" data-src="img/wedding-element-04.png" data-gallery="gallery_wedding_elements"></a>
+                </div>
+
+                <div class="spotlight-group">
+                    <a class="button spotlight" href="img/logo-01.png" data-gallery="gallery_logo" download>Logo</a>
+                </div>
             </div>
         </div>
 
@@ -122,12 +163,17 @@
        <p>Mosony Ákos 2020</p>
     </div>
 
-    <script src="/js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- animation on scroll-->
-    <script> AOS.init({once: true});</script> <!-- animation on scroll-->
+    <!-- main script -->
+    <script src="js/script.js"></script>
 
-    <!-- Animation on scroll: https://michalsnik.github.io/aos/   -->
+    <!-- gallery -->
+    <script src="js/spotlight.min.js"></script>
+
+    <!-- animation on scroll -->
     <!-- css animation: https://animate.style/   -->
+    <!-- Animation on scroll: https://michalsnik.github.io/aos/   -->
+    <script src="js/aos.js"></script> <!-- animation on scroll-->
+    <script> AOS.init({once: true});</script> <!-- animation on scroll-->
 
 </body>
 </html>
